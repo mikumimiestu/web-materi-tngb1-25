@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pemrograman Web</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="../script/sidebar.js"></script>
+  <link rel="stylesheet" href="../styles/footer.css">
+  <script src="../script/footer.js"></script>
+</head>
+<body class="bg-gray-600 text-white flex">
+  <!-- Sidebar akan dimuat melalui JavaScript -->
+  
+  <!-- Main Content -->
+  <main class="flex-1 ml-64 p-8">
+    <div class="container mx-auto">
+      <h1 class="text-3xl font-bold mb-6">Pemrograman Web</h1>
+      <!-- Pendahuluan pengenalan pemrograman web -->
+      <div>
+        <div class="flex items-center mb-4">
+            <h2 class="text-2xl font-bold text-green-400">Pendahuluan</h2>
+            <div class="flex-1 h-0.5 bg-green-300 ml-4"></div>
+        </div>          
+        <p class="mb-4">Pemrograman web adalah kegiatan membuat aplikasi web menggunakan bahasa pemrograman tertentu. Bahasa pemrograman yang sering digunakan untuk membuat aplikasi web antara lain HTML, CSS, dan JavaScript. Walaupun sebenarnya html dan css bukanlah bahasa pemrograman. Namun, keduanya sangat penting dalam membuat aplikasi web, selain JavaScript sebagai bahasa pemrograman dalam pembuatan aplikasi web ada juga beberapa bahasa pemrograman lainnya seperti PHP, Python, dan Ruby yang digunakan untuk membuat aplikasi web.</p>
+        <p>Pada kali ini kita akan mempelajari syntax dasar yang akan menjadi kunci dalam membuat aplikasi web. Namun pada kali ini kita tidak menggunakan <span class="text-sm text-gray-300">(.css)</span> sebagai stylingnya, tetapi kita akan menggunakan <span class="text-sm text-blue-400">tailwind</span> untuk stylingnya.</p>
+        <p>Mengapa menggunakan tailwind sebagai style?
+            <ul class="list-disc ml-8">
+                <li>Mempercepat proses styling</li>
+                <li>Mempermudah dalam membuat tampilan</li>
+                <li>Mempermudah dalam membuat tampilan yang responsif</li>
+            </ul>
+        </p>
+        <br>
+        <p>Biasanya untuk html itu di akhir dengan <span class="text-sm text-gray-300">(.html)</span>, untuk css di akhiri dengan <span class="text-sm text-gray-300">(.css)</span>, dan untuk javascript di akhiri dengan <span class="text-sm text-gray-300">(.js)</span>. Namun pada kali ini kita akan menggunakan <span class="text-sm text-blue-400">tailwind</span> sebagai stylingnya, jadi kita akan menggunakan <span class="text-sm text-gray-300">(.css)</span> sebagai file style.</p>
+        <p>Contoh nama file agar lebih jelas sebagai berikut
+            <ul class="list-disc ml-8">
+                <li>index.html</li>
+                <li>style.css</li>
+                <li>script.js</li>
+            </ul>
+            <p>Jika menggunakan <span class="text-sm text-blue-400">tailwind</span> maka kita perlu untuk menghubungkan <span class="text-sm text-blue-400">tailwind</span> dengan file html kita dengan cara menambahkan script berikut pada file html kita.</p>
+            <p><span class="text-sm text-gray-300">&lt;script src="https://cdn.tailwindcss.com"&gt;&lt;/script&gt;</span> ini diletakkan pada code html sebelum tag <span class="text-sm text-gray-300">&lt;body&gt;</span> dan setelah tag <span class="text-sm text-gray-300">&lt;title&gt;</span>.</p>
+            <p>Contoh code html yang sudah terhubung dengan <span class="text-sm text-blue-400">tailwind</span> sebagai berikut
+                <ul class="list-disc ml-8">
+                    <li><span class="text-sm text-gray-300">&lt;p class="text-sm text-blue-300"&gt;Ini adalah tulisan berwarna biru muda menggunakan tailwind&lt;/p&gt;</span></li> maka hasil dari code tersebut adalah <p class="text-sm text-blue-300">Ini adalah tulisan berwarna biru muda menggunakan tailwind</p>
+                </ul>
+            </p>
+            <br>
+            <p>Dari contoh penggunaan <span class="text-sm text-blue-400">tailwind</span> di atas, kita bisa melihat bahwa <span class="text-sm text-blue-400">tailwind</span> sangat mempermudah dalam membuat tampilan code yang singkat yang responsif dan mempercepat proses styling.</p>
+        <br>
+      </div>
+    </div>
+  </main>
+  <!-- Footer -->
+  <footer id="footer-container" class="bg-gray-600 text-gray-400 flex items-center justify-center"></footer>
+</body>
+</html>

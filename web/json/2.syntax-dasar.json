@@ -1,0 +1,87 @@
+[
+  {
+    "format": "HTML",
+    "code": "<h1>Hello, World!</h1>",
+    "explanation": "Tag h1 digunakan untuk membuat heading level 1, biasanya untuk judul utama di halaman."
+  },
+  {
+    "format": "PHP",
+    "code": "<?php echo 'Hello, World!'; ?>",
+    "explanation": "Sintaks echo digunakan untuk mencetak teks di layar pada PHP."
+  },
+  {
+    "format": "HTML",
+    "code": "<a href='https://example.com'>Link ke Example</a>",
+    "explanation": "Tag a digunakan untuk membuat hyperlink ke halaman lain, dengan atribut href untuk menentukan URL tujuan."
+  },
+  {
+    "format": "HTML",
+    "code": "<img src='image.jpg' alt='Deskripsi Gambar' />",
+    "explanation": "Tag img digunakan untuk menampilkan gambar, dengan atribut src untuk menentukan lokasi gambar dan alt untuk memberikan deskripsi alternatif."
+  },
+  {
+    "format": "HTML",
+    "code": "<form action='/submit' method='POST'><input type='text' name='username' /><button type='submit'>Kirim</button></form>",
+    "explanation": "Tag form digunakan untuk membuat formulir. Atribut action menentukan URL tujuan data, method menentukan metode pengiriman (GET atau POST)."
+  },
+  {
+    "format": "PHP",
+    "code": "<?php $name = 'Zaki'; echo 'Halo, ' . $name; ?>",
+    "explanation": "Variabel di PHP diawali dengan simbol $, dan operator titik (.) digunakan untuk menggabungkan string."
+  },
+  {
+    "format": "PHP",
+    "code": "<?php if ($age >= 18) { echo 'Dewasa'; } else { echo 'Belum Dewasa'; } ?>",
+    "explanation": "Statement if digunakan untuk membuat kondisi, dengan struktur if-else untuk mengambil keputusan."
+  },
+  {
+    "format": "PHP",
+    "code": "<?php foreach ($items as $item) { echo $item; } ?>",
+    "explanation": "Perulangan foreach digunakan untuk iterasi pada array, di mana setiap elemen array diproses satu per satu."
+  },
+  {
+    "format": "HTML",
+    "code": "<ul><li>Item 1</li><li>Item 2</li></ul>",
+    "explanation": "Tag ul digunakan untuk membuat daftar tidak berurutan (bullet list), dan tag li untuk setiap item dalam daftar."
+  },
+  {
+    "format": "HTML",
+    "code": "<table><tr><th>Nama</th><th>Umur</th></tr><tr><td>Zaki</td><td>21</td></tr></table>",
+    "explanation": "Tag table digunakan untuk membuat tabel, dengan <tr> untuk baris, <th> untuk header, dan <td> untuk data dalam sel."
+  },
+  {
+    "format": "HTML",
+    "code": "<div class='container'>Konten di dalam div</div>",
+    "explanation": "Tag div digunakan sebagai wadah untuk elemen lain, sering digunakan untuk styling dan tata letak dengan CSS."
+  },
+  {
+    "format": "HTML",
+    "code": "<span style='color: red;'>Teks berwarna merah</span>",
+    "explanation": "Tag span digunakan untuk menandai teks dalam baris, sering digunakan untuk styling kecil dengan CSS."
+  },
+  {
+    "format": "PHP",
+    "code": "<?php $arr = [1, 2, 3]; echo $arr[0]; ?>",
+    "explanation": "Array di PHP dibuat menggunakan tanda kurung siku [], dan elemen dapat diakses dengan indeks dimulai dari 0."
+  },
+  {
+    "format": "PHP",
+    "code": "<?php function greet($name) { return 'Hello, ' . $name; } echo greet('Zaki'); ?>",
+    "explanation": "Fungsi di PHP didefinisikan dengan kata kunci function, dan dapat menerima parameter serta mengembalikan nilai dengan return."
+  },
+  {
+    "format": "PHP",
+    "code": "<?php include 'header.php'; ?>",
+    "explanation": "Sintaks include digunakan untuk menyisipkan file PHP lain ke dalam file yang sedang diproses, biasanya untuk komponen yang digunakan ulang."
+  },
+  {
+    "format": "PHP",
+    "code": "<?php $is_admin = true; echo $is_admin ? 'Admin' : 'User'; ?>",
+    "explanation": "Operator ternary digunakan sebagai bentuk pendek dari statement if-else, dengan sintaks condition ? true_expression : false_expression."
+  },
+  {
+    "format": "PHP",
+    "code": "<?php try { throw new Exception('Error terjadi'); } catch (Exception $e) { echo $e->getMessage(); } ?>",
+    "explanation": "Blok try-catch digunakan untuk menangani error dan exception, dengan throw untuk melempar exception dan catch untuk menangkapnya."
+  }
+]

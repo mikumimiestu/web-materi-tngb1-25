@@ -1,0 +1,20 @@
+{
+  "name": "web-materi",
+  "version": "1.0.0",
+  "main": "tailwind.config.js",
+  "scripts": {
+    "start": "live-server"
+  },
+  "keywords": [],
+  "author": "ZAKI MUSHTHAFA BILLAH",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "autoprefixer": "^10.4.20",
+    "postcss": "^8.5.1",
+    "tailwindcss": "^4.0.0"
+  },
+  "devDependencies": {
+    "live-server": "^1.2.2"
+  }
+}
