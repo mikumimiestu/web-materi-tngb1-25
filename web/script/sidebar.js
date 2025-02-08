@@ -6,18 +6,24 @@ document.addEventListener('DOMContentLoaded', () => {
           <li><a href="1.pendahuluan.html" class="text-gray-300 hover:text-white"><p class="text-sm font-bold">Pendahuluan</p></a></li>
           <li><a href="2.syntax-dasar.html" class="text-gray-300 hover:text-white"><p class="text-sm font-bold">Pengenalan Syntax</p></a></li>
           <li><a href="a.2.struktur-dasar.html" class="text-gray-300 hover:text-white"><p class="text-xs ml-4">| Struktur Dasar</p></a></li>
-          <li><a href="3.syntax-dasar.html" class="text-gray-300 hover:text-white"><p class="text-sm font-bold">Kelompok 1</p></a></li>
-          <li><a href="a.2.struktur-dasar.html" class="text-gray-300 hover:text-white"><p class="text-xs ml-4">| Menu 1</p></a></li>
-          <li><a href="a.2.struktur-dasar.html" class="text-gray-300 hover:text-white"><p class="text-xs ml-4">| Menu 2</p></a></li>
-          <li><a href="a.2.struktur-dasar.html" class="text-gray-300 hover:text-white"><p class="text-xs ml-4">| Menu 3</p></a></li>
-          <li><a href="3.syntax-dasar.html" class="text-gray-300 hover:text-white"><p class="text-sm font-bold">Kelompok 2</p></a></li>
-          <li><a href="a.2.struktur-dasar.html" class="text-gray-300 hover:text-white"><p class="text-xs ml-4">| Menu 1</p></a></li>
-          <li><a href="a.2.struktur-dasar.html" class="text-gray-300 hover:text-white"><p class="text-xs ml-4">| Menu 2</p></a></li>
-          <li><a href="a.2.struktur-dasar.html" class="text-gray-300 hover:text-white"><p class="text-xs ml-4">| Menu 3</p></a></li>
-          <li><a href="3.syntax-dasar.html" class="text-gray-300 hover:text-white"><p class="text-sm font-bold">Kelompok 3</p></a></li>
-          <li><a href="a.2.struktur-dasar.html" class="text-gray-300 hover:text-white"><p class="text-xs ml-4">| Menu 1</p></a></li>
-          <li><a href="a.2.struktur-dasar.html" class="text-gray-300 hover:text-white"><p class="text-xs ml-4">| Menu 2</p></a></li>
-          <li><a href="a.2.struktur-dasar.html" class="text-gray-300 hover:text-white"><p class="text-xs ml-4">| Menu 3</p></a></li>
+
+          <div class="flex-1 h-0.5 bg-gray-300"></div>
+
+          <li><p href="#" class="text-gray-300 hover:text-white"><p class="text-sm font-bold">Kelompok 1</p></p></li>
+          <li><a href="dokumentasi-kel1.html" class="text-gray-300 hover:text-white"><p class="text-xs ml-4">| Dokumentasi</p></a></li>
+          <li><a href="a.2.struktur-dasar.html" class="text-gray-300 hover:text-white"><p class="text-xs ml-4">| Project akhir</p></a></li>
+
+          <div class="flex-1 h-0.5 bg-gray-300"></div>
+
+          <li><p href="#" class="text-gray-300 hover:text-white"><p class="text-sm font-bold">Kelompok 2</p></p></li>
+          <li><a href="dokumentasi-kel2.html" class="text-gray-300 hover:text-white"><p class="text-xs ml-4">| Dokumentasi</p></a></li>
+          <li><a href="a.2.struktur-dasar.html" class="text-gray-300 hover:text-white"><p class="text-xs ml-4">| Project akhir</p></a></li>
+
+          <div class="flex-1 h-0.5 bg-gray-300"></div>
+          
+          <li><p href="#" class="text-gray-300 hover:text-white"><p class="text-sm font-bold">Kelompok 3</p></p></li>
+          <li><a href="dokumentasi-kel3.html" class="text-gray-300 hover:text-white"><p class="text-xs ml-4">| Dokumentasi</p></a></li>
+          <li><a href="a.2.struktur-dasar.html" class="text-gray-300 hover:text-white"><p class="text-xs ml-4">| Project akhir</p></a></li>
         </ul>
       </aside>
     `;
