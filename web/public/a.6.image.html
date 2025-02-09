@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pemrograman Web</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="../script/sidebar.js"></script>
+  <link rel="stylesheet" href="../styles/footer.css">
+  <script src="../script/footer.js"></script>
+</head>
+<body class="bg-gray-600 text-white flex">
+  <!-- Sidebar akan dimuat melalui JavaScript -->
+  
+  <!-- Main Content -->
+  <main class="flex-1 ml-64 p-8">
+    <v class="container mx-auto">
+      <h1 class="text-3xl font-bold mb-6">Pemrograman Web</h1>
+      <!-- Pendahuluan pengenalan pemrograman web -->
+      <div>
+        <div class="flex items-center mb-4">
+          <h2 class="text-2xl font-bold text-green-400">Image</h2>
+          <div class="flex-1 h-0.5 bg-green-300 ml-4"></div>
+        </div>
+        <p>
+            Gambar adalah elemen HTML yang digunakan untuk menampilkan gambar. Elemen <code>&lt;img&gt;</code> digunakan untuk menampilkan gambar. Elemen ini memiliki atribut <code>src</code> yang digunakan untuk menentukan URL gambar. Elemen ini juga memiliki atribut <code>alt</code> yang digunakan untuk menentukan teks alternatif gambar. Teks alternatif ini akan muncul jika gambar tidak dapat ditampilkan.
+        </p>
+        <p>
+            Untuk contohnya adalah sebagai berikut:
+        </p>
+        <div class="bg-gray-800 p-4 rounded-lg shadow-md mb-4">
+            <p class="text-gray-400">&lt;img src="https://dummyimage.com/1280x800/d4d4d4/171717" alt="Placeholder"&gt;</p>
+            </div>
+            <p>
+                Hasilnya sebagai berikut:
+            </p>
+            <img src="https://dummyimage.com/1280x800/d4d4d4/171717" alt="Placeholder" class="w-64 h-auto">
+            </div>
+            <p>
+                Dalam contoh di atas, kita dapat melihat struktur dasar HTML yang terdiri dari <code>&lt;img&gt;</code>.
+            </p>
+            <br>
+            <p>
+                Selain itu, kita juga dapat menambahkan atribut <code>width</code> dan <code>height</code> untuk menentukan lebar dan tinggi gambar. Atribut ini dapat diisi dengan nilai dalam satuan piksel atau persen. Jika hanya salah satu atribut yang diisi, maka gambar akan menyesuaikan ukuran yang diisi. Jika kedua atribut diisi, maka gambar akan diubah proporsinya. Jika tidak ada atribut yang diisi, maka gambar akan menyesuaikan ukuran aslinya.
+            </p>
+            <p>
+              Untuk gambar yang berupa file lokal, kita dapat menggunakan <code>src</code> yang mengarah ke path file gambar yang ingin kita tampilkan. Contoh sebagai berikut:
+            </p>
+            <div class="bg-gray-800 p-4 rounded-lg shadow-md mb-4">
+                <p class="text-gray-400">&lt;img src="gambar.jpg" alt="Gambar"&gt;</p>
+                </div>
+                <p>
+                    Hasilnya sebagai berikut:
+                </p>
+    </div> 
+  </main>
+  <!-- Footer -->
+  <footer id="footer-container" class="bg-gray-00 text-gray-400 flex items-center justify-center"></footer>
+</body>
+</html>

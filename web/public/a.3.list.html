@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pemrograman Web</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="../script/sidebar.js"></script>
+  <link rel="stylesheet" href="../styles/footer.css">
+  <script src="../script/footer.js"></script>
+</head>
+<body class="bg-gray-600 text-white flex">
+  <!-- Sidebar akan dimuat melalui JavaScript -->
+  
+  <!-- Main Content -->
+  <main class="flex-1 ml-64 p-8">
+    <div class="container mx-auto">
+      <h1 class="text-3xl font-bold mb-6">Pemrograman Web</h1>
+      <!-- Pendahuluan pengenalan pemrograman web -->
+      <div>
+        <div class="flex items-center mb-4">
+          <h2 class="text-2xl font-bold text-green-400">List</h2>
+          <div class="flex-1 h-0.5 bg-green-300 ml-4"></div>
+        </div>
+        <p>
+            Ada dua jenis list, yaitu berurutan (order list) dan list tidak beruruta (unordered list). Untuk membuat list berurutan di gunakan tag <span class="text-sm text-gray-300">&lt;ol&gt;...&lt;/ol&gt;</span>. Tag ini memiliki atribut type yang menunjukkan jenis penomoran dan dapat di beri nilai 1, a, A atau i. Untuk membuat list tidak berurutan di gunakan tag <span class="text-sm text-gray-300">&lt;ul&gt;...&lt;/ul&gt;</span>. Tag ini juga memiliki atribut type yang menunjukkan jenis penomoran dan dapat di beri nilai disc, circle atau square. Untuk membuat item list pada tiap baris di gunakan tag <span class="text-sm text-gray-300">&lt;li&gt;...&lt;/li&gt;</span>
+        </p>
+        <p>
+            Untuk contohnya adalah sebagai berikut:
+        </p>
+        <div class="bg-gray-800 p-4 rounded-lg shadow-md mb-4">
+            <p class="text-gray-400">&lt;ol type="1"&gt;</p>
+            <p class="text-gray-400">  &lt;li&gt;Item 1&lt;/li&gt;</p>
+            <p class="text-gray-400">  &lt;li&gt;Item 2&lt;/li&gt;</p>
+            <p class="text-gray-400">  &lt;li&gt;Item 3&lt;/li&gt;</p>
+            <p class="text-gray-400">&lt;/ol&gt;</p>
+            <p class="text-gray-400">&lt;ul type="disc"&gt;</p>
+            <p class="text-gray-400">  &lt;li&gt;Item 1&lt;/li&gt;</p>
+            <p class="text-gray-400">  &lt;li&gt;Item 2&lt;/li&gt;</p>
+            <p class="text-gray-400">  &lt;li&gt;Item 3&lt;/li&gt;</p>
+            <p class="text-gray-400">&lt;/ul&gt;</p>
+        </div>
+        <p>
+            Hasilnya sebagai berikut:
+        </p>
+        <ol type="a">
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+        </ol>
+        <br>
+        <ul type="square">
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+        </ul>
+      </div>
+      <p>
+            Dalam contoh di atas, kita dapat melihat struktur dasar HTML yang terdiri dari <code>&lt;ol&gt;</code>, <code>&lt;ul&gt;</code>, dan <code>&lt;li&gt;</code>. Mungkin hasilnya tidak keluar karena tailwind tidak support untuk type list.
+      </p>
+      <br>
+      <p>
+        Lalu bagaimana jika kita ingin menambahkan style pada list tersebut? Kita bisa menggunakan tailwindcss untuk menambahkan style pada list tersebut. Berikut adalah contoh penggunaan tailwindcss pada list:
+      </p>
+        <div class="bg-gray-800 p-4 rounded-lg shadow-md mb-4">
+            <p class="text-gray-400">&lt;ol class="list-decimal"&gt;</p>
+            <p class="text-gray-400">  &lt;li&gt;Item 1&lt;/li&gt;</p>
+            <p class="text-gray-400">  &lt;li&gt;Item 2&lt;/li&gt;</p>
+            <p class="text-gray-400">  &lt;li&gt;Item 3&lt;/li&gt;</p>
+            <p class="text-gray-400">&lt;/ol&gt;</p>
+            <p class="text-gray-400">&lt;ul class="list-disc"&gt;</p>
+            <p class="text-gray-400">  &lt;li&gt;Item 1&lt;/li&gt;</p>
+            <p class="text-gray-400">  &lt;li&gt;Item 2&lt;/li&gt;</p>
+            <p class="text-gray-400">  &lt;li&gt;Item 3&lt;/li&gt;</p>
+            <p class="text-gray-400">&lt;/ul&gt;</p>
+        </div>
+    </div>
+    <p>
+        Hasilnya sebagai berikut:
+    </p>
+    <ol class="list-decimal">
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+    </ol>
+    <br>
+    <ul class="list-disc">
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+    </ul>
+    <br>
+    <p>
+        Dari kode di atas kita telah berhasil membuat list dengan menggunakan tailwindcss. Dengan menggunakan tailwindcss kita bisa membuat list lebih menarik dan lebih rapi. Selain itu, kita juga bisa membuat list dengan menggunakan style yang berbeda-beda. Contohnya kita bisa membuat list dengan menggunakan style list-decimal dan list-disc.
+    </p>
+  </main>
+  <!-- Footer -->
+  <footer id="footer-container" class="bg-gray-00 text-gray-400 flex items-center justify-center"></footer>
+</body>
+</html>

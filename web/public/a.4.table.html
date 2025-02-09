@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pemrograman Web</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="../script/sidebar.js"></script>
+  <link rel="stylesheet" href="../styles/footer.css">
+  <script src="../script/footer.js"></script>
+</head>
+<body class="bg-gray-600 text-white flex">
+  <!-- Sidebar akan dimuat melalui JavaScript -->
+  
+  <!-- Main Content -->
+  <main class="flex-1 ml-64 p-8">
+    <div class="container mx-auto">
+      <h1 class="text-3xl font-bold mb-6">Pemrograman Web</h1>
+      <!-- Pendahuluan pengenalan pemrograman web -->
+      <div>
+        <div class="flex items-center mb-4">
+          <h2 class="text-2xl font-bold text-green-400">Table</h2>
+          <div class="flex-1 h-0.5 bg-green-300 ml-4"></div>
+        </div>
+        <p>
+            Tabel adalah salah satu elemen HTML yang digunakan untuk menampilkan data dalam bentuk baris dan kolom. Tabel terdiri dari beberapa elemen, yaitu <code>&lt;table&gt;</code> sebagai elemen utama, <code>&lt;tr&gt;</code> sebagai elemen baris, <code>&lt;th&gt;</code> sebagai elemen header, dan <code>&lt;td&gt;</code> sebagai elemen data. Elemen <code>&lt;th&gt;</code> dan <code>&lt;td&gt;</code> harus berada di dalam elemen <code>&lt;tr&gt;</code>. Elemen <code>&lt;th&gt;</code> digunakan untuk menampilkan header, sedangkan <code>&lt;td&gt;</code> digunakan untuk menampilkan data.
+        </p>
+        <p>
+            Untuk contohnya adalah sebagai berikut:
+        </p>
+        <div class="bg-gray-800 p-4 rounded-lg shadow-md mb-4">
+            <p class="text-gray-400">&lt;table&gt;</p>
+            <p class="text-gray-400">  &lt;tr&gt;</p>
+            <p class="text-gray-400">    &lt;th&gt;Header 1&lt;/th&gt;</p>
+            <p class="text-gray-400">    &lt;th&gt;Header 2&lt;/th&gt;</p>
+            <p class="text-gray-400">  &lt;/tr&gt;</p>
+            <p class="text-gray-400">  &lt;tr&gt;</p>
+            <p class="text-gray-400">    &lt;td&gt;Data 1&lt;/td&gt;</p>
+            <p class="text-gray-400">    &lt;td&gt;Data 2&lt;/td&gt;</p>
+            <p class="text-gray-400">  &lt;/tr&gt;</p>
+            <p class="text-gray-400">&lt;/table&gt;</p>
+        </div>
+        <p>
+            Hasilnya sebagai berikut:
+        </p>
+        <table class="table-auto">
+          <thead>
+            <tr>
+              <th class="px-4 py-2">Header 1</th>
+              <th class="px-4 py-2">Header 2</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="border px-4 py-2">Data 1</td>
+              <td class="border px-4 py-2">Data 2</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p>
+            Dalam contoh di atas, kita dapat melihat struktur dasar HTML yang terdiri dari <code>&lt;table&gt;</code>, <code>&lt;tr&gt;</code>, <code>&lt;th&gt;</code>, dan <code>&lt;td&gt;</code>.
+      </p>
+      <br>
+      <p>
+            Tabel memiliki beberapa atribut yang dapat digunakan untuk mengatur tampilan tabel, seperti <code>border</code> untuk menampilkan garis batas, <code>cellpadding</code> untuk menambahkan jarak antara teks dan batas sel, <code>cellspacing</code> untuk menambahkan jarak antara sel, <code>width</code> untuk menentukan lebar tabel, dan <code>height</code> untuk menentukan tinggi tabel.
+      </p>
+      <br>
+      <p>
+        Lalu bagaimana jika kita ingin menambahkan style pada tabel tersebut? Kita bisa menggunakan tailwindcss untuk menambahkan style pada tabel tersebut. Berikut adalah contoh penggunaan tailwindcss pada tabel:
+      </p>
+        <div class="bg-gray-800 p-4 rounded-lg shadow-md mb-4">
+            <p class="text-gray-400">&lt;div class="overflow-hidden rounded-lg border border-gray-300"&gt;</p>
+            <p class="text-gray-400">&lt;table class="table-auto w-full"&gt;</p>
+            <p class="text-gray-400">  &lt;thead&gt;</p>
+            <p class="text-gray-400">    &lt;tr class="bg-gray-200"&gt;</p>
+            <p class="text-gray-400">      &lt;th class="px-4 py-2 text-gray-700"&gt;Header 1&lt;/th&gt;</p>
+            <p class="text-gray-400">      &lt;th class="px-4 py-2 text-gray-700"&gt;Header 2&lt;/th&gt;</p>
+            <p class="text-gray-400">    &lt;/tr&gt;</p>
+            <p class="text-gray-400">  &lt;/thead&gt;</p>
+            <p class="text-gray-400">  &lt;tbody&gt;</p>
+            <p class="text-gray-400">    &lt;tr&gt;</p>
+            <p class="text-gray-400">      &lt;td class="border px-4 py-2"&gt;Data 1&lt;/td&gt;</p>
+            <p class="text-gray-400">      &lt;td class="border px-4 py-2"&gt;Data 2&lt;/td&gt;</p>
+            <p class="text-gray-400">    &lt;/tr&gt;</p>
+            <p class="text-gray-400">  &lt;/tbody&gt;</p>
+            <p class="text-gray-400">&lt;/table&gt;</p>
+            <p class="text-gray-400">&lt;/div&gt;</p>
+        </div>
+        <p>
+            Hasilnya sebagai berikut:
+        </p>
+        <div class="overflow-hidden rounded-lg border border-gray-300">
+          <table class="table-auto w-full">
+            <thead>
+              <tr class="bg-gray-200">
+                <th class="px-4 py-2 text-gray-700">Header 1</th>
+                <th class="px-4 py-2 text-gray-700">Header 2</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="border px-4 py-2">Data 1</td>
+                <td class="border px-4 py-2">Data 2</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <br>
+        <p>
+            Dalam contoh di atas, kita menggunakan class <code>overflow-hidden</code> untuk mengatur overflow tabel, <code>rounded-lg</code> untuk membuat sudut tabel menjadi rounded, dan <code> border border-gray-300</code> untuk menambahkan border pada tabel. Selain itu, kita juga menggunakan class <code>table-auto</code> untuk mengatur lebar tabel secara otomatis dan <code>w-full</code> untuk membuat tabel menjadi full width. Untuk mengatur warna background header, kita menggunakan class <code>bg-gray-200</code>. Untuk mengatur warna background sel, kita menggunakan class <code>border</code> dan <code>px-4 py-2</code> untuk mengatur padding pada sel. Untuk mengatur warna teks, kita menggunakan class <code>text-gray-700</code> pada header.
+        </p>
+  </main>
+  <!-- Footer -->
+  <footer id="footer-container" class="bg-gray-00 text-gray-400 flex items-center justify-center"></footer>
+</body>
+</html>

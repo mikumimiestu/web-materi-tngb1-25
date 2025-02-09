@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pemrograman Web</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="../script/sidebar.js"></script>
+  <link rel="stylesheet" href="../styles/footer.css">
+  <script src="../script/footer.js"></script>
+</head>
+<body class="bg-gray-600 text-white flex">
+  <!-- Sidebar akan dimuat melalui JavaScript -->
+  
+  <!-- Main Content -->
+  <main class="flex-1 ml-64 p-8">
+    <v class="container mx-auto">
+      <h1 class="text-3xl font-bold mb-6">Pemrograman Web</h1>
+      <!-- Pendahuluan pengenalan pemrograman web -->
+      <div>
+        <div class="flex items-center mb-4">
+          <h2 class="text-2xl font-bold text-green-400">Link</h2>
+          <div class="flex-1 h-0.5 bg-green-300 ml-4"></div>
+        </div>
+        <p>
+            Link adalah elemen HTML yang digunakan untuk membuat tautan ke halaman web lain. Elemen <code>&lt;a&gt;</code> digunakan untuk membuat link. Elemen ini memiliki atribut <code>href</code> yang digunakan untuk menentukan URL tujuan. Elemen ini juga memiliki atribut <code>target</code> yang digunakan untuk menentukan cara tautan dibuka. Nilai dari atribut <code>target</code> dapat berupa <code>_blank</code> untuk membuka tautan di tab baru, <code>_self</code> untuk membuka tautan di tab yang sama, <code>_parent</code> untuk membuka tautan di parent frame, dan <code>_top</code> untuk membuka tautan di tab paling atas.
+        </p>
+        <p>
+            Untuk contohnya adalah sebagai berikut:
+        </p>
+        <div class="bg-gray-800 p-4 rounded-lg shadow-md mb-4">
+            <p class="text-gray-400">&lt;a class="text-blue-400 href="https://www.google.com" target="_blank"&gt;Google&lt;/a&gt;</p>
+        </div>
+        <p>
+            Hasilnya sebagai berikut:
+        </p>
+        <a href="https://www.google.com" class="text-blue-400" target="_blank">Google</a>
+      </div>
+      <p>
+            Dalam contoh di atas, kita dapat melihat struktur dasar HTML yang terdiri dari <code>&lt;a&gt;</code>.
+      </p>
+      <br>
+      <p>
+        Lalu bagaimana jika kita ingin membuat link yang mengarah ke halaman lain di website kita sendiri? Kita dapat menggunakan <code>href</code> yang mengarah ke path file yang ingin kita tuju.
+      </p>
+      <p>
+        Untuk contohnya adalah sebagai berikut:
+      </p>
+      <div class="bg-gray-800 p-4 rounded-lg shadow-md mb-4">
+          <p class="text-gray-400">&lt;a href="halman1.html class="text-blue-400"&gt;Halman 1&lt;/a&gt;</p>
+          <p class="text-gray-400">&lt;a href="halman2.html class="text-blue-400"&gt;Halaman 2&lt;/a&gt;</p>
+          </div>
+          <p>
+              Hasilnya sebagai berikut:
+          </p>
+          <a href="#" class="text-blue-400">Halaman 1</a>
+          <br>
+          <a href="#" class="text-blue-400">Halamn 2</a>
+          </div>
+          <p>
+              Dalam contoh di atas, kita dapat melihat struktur dasar HTML yang terdiri dari <code>&lt;a&gt;</code>. Dan kita juga dapat melihat bahwa link yang dibuat mengarah ke halaman lain di website kita sendiri.
+          </p>
+          <br>
+          <p>
+            Lalu bagaimana jika halaman lainnya berada di suatu folder di dalam folder web kita? Kita dapat menggunakan <code>href</code> yang mengarah ke path file yang ingin kita tuju. Jika halaman tersebut berada di dalam folder, kita dapat menambahkan nama folder di depan nama file tersebut. Jika halaman tersebut berada di dalam folder yang berada di dalam folder, kita dapat menambahkan nama folder di depan nama folder tersebut dan nama file tersebut. Begitu seterusnya.
+          </p>
+          <p>
+            Untuk contohnya adalah sebagai berikut:
+          </p>
+          <div class="bg-gray-800 p-4 rounded-lg shadow-md mb-4">
+              <p class="text-gray-400">&lt;a href="folder1/halman1.html"&gt;Halman 1&lt;/a&gt;</p>
+              <p class="text-gray-400">&lt;a href="folder2/halman2.html"&gt;Halaman 2&lt;/a&gt;</p>
+              </div>
+              <p>
+                  Hasilnya sebagai berikut:
+              </p>
+              <a href="#" class="text-blue-400">Halaman 1</a>
+              <br>
+              <a href="#" class="text-blue-400">Halamn 2</a>
+              </div>
+              <p>
+                  Dalam contoh di atas, kita dapat melihat struktur dasar HTML yang terdiri dari <code>&lt;a&gt;</code>. Dan kita juga dapat melihat bahwa link yang dibuat mengarah ke halaman lain di website kita sendiri yang berada di dalam folder.
+              </p>
+              <p>Mungkin terlihat sama hasilnya, tapi perbedaan terletak pada path file yang digunakan.</p>
+    </div> 
+  </main>
+  <!-- Footer -->
+  <footer id="footer-container" class="bg-gray-00 text-gray-400 flex items-center justify-center"></footer>
+</body>
+</html>
