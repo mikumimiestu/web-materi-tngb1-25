@@ -10,6 +10,9 @@ document.addEventListener('DOMContentLoaded', () => {
           <li><a href="a.4.table.html" class="text-gray-300 hover:text-white"><p class="text-xs ml-4">| Table</p></a></li>
           <li><a href="a.5.link.html" class="text-gray-300 hover:text-white"><p class="text-xs ml-4">| Link</p></a></li>
           <li><a href="a.6.image.html" class="text-gray-300 hover:text-white"><p class="text-xs ml-4">| Image</p></a></li>
+          <li><a href="a.7.latihan.html" class="text-gray-300 hover:text-white"><p class="text-xs ml-4">| Latihan</p></a></li>
+
+          <li><a href="#" class="text-gray-300 hover:text-white"><p class="text-sm font-bold">Pengenalan JavaScript</p></a></li>
 
           <div class="flex-1 h-0.5 bg-gray-300"></div>
 
