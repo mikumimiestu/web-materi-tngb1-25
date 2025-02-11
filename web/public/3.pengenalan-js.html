@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pemrograman Web</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="../script/sidebar.js"></script>
+  <script src="../script/home/2.syntax-dasar.js"></script>
+  <link rel="stylesheet" href="../styles/footer.css">
+  <script src="../script/footer.js"></script>
+</head>
+<body class="bg-gray-600 text-white flex">
+  <!-- Sidebar akan dimuat melalui JavaScript -->
+  
+  <!-- Main Content -->
+  <main class="flex-1 ml-64 p-8">
+    <div class="container mx-auto">
+      <h1 class="text-3xl font-bold mb-6">Pemrograman Web</h1>
+      <!-- Pendahuluan pengenalan pemrograman web -->
+      <div>
+        <div class="flex items-center mb-4">
+          <h2 class="text-2xl font-bold text-green-400">JavaScript</h2>
+          <div class="flex-1 h-0.5 bg-green-300 ml-4"></div>
+        </div>  
+
+        <h2 class="font-bold text-xl text-blue-200">Pengertian</h2>
+        <p class="mb-4">
+            JavaScript merupakan bahasa pemrograman web yang pemrosesannya dilakukan di sisi client. Karena berjalan di sisi client, JavaScript dapat dijalankan hanya di browser. Berbeda dengan PHP yang bekerja di sisi server, untuk menjalankan script JavaScript tidak memerlukan refresh pada browser.
+
+            <br><br>
+
+            JavaScript biasanya di jalankan ketika ada event tertentu yang terjadi pada halaman web. Baik event yang dilakukan oleh user, maupun event yang terjadi karena adanya perubahan pada halaman website.
+
+            <br><br>
+
+            JavaScript mulai populer semenjak adanya jQuery sebagai salah satu library yang memudahkan pengguna JavaScript. Namun seiring munculnya library baru dan framework baru dengan berbagai kelebihannya, popularitaas jQuery mulai tergeser.
+        </p>
+
+        <h2 class="font-bold text-xl text-blue-200">Meletakkan script JavaScript</h2>
+        <p class="mb-4">
+            Ada berbagai cara meletakkan code JavaScript pada dokumen HTML, namun biasanya disesuaikan dengan kebutuhan atau keadaan. Berikut berbagai cara meletakkan kode JavaScript.
+
+            <br>
+
+            <p class="font-bold text-sm">1. Menggunakan Event Handler (Inline)</p>
+            Cara ini biasanya digunakan jika kode JavaScript hanya sedikit atau sekedar memanggil function. Cara meletakkan kode JavaScript melalui cara ini yaitu dengan meletakkan kode setelah attribut event pada tag HTML. Contoh script berikut akan menampilkan kotak pesan ketika dokumen baru dibuka dan ketika di klik.
+        
+        <div class="bg-gray-800 p-4 rounded-lg mb-4">
+            <pre class="bg-gray-800 p-4 rounded-lg">
+                <code class="language-html">
+                    &lt;button onclick="alert('Halo, saya adalah pesan dari JavaScript!');
+                    alert('Halo, saya adalah pesan dari JavaScript!')">Klik Saya</button>
+                </code>
+            </pre>
+        </div>
+            <p class="font-bold text-sm">2. Menggunakan Tag Script (Internal)</p>
+            Caranya yaitu dengan meletakkan kode JavaScript di dalam tag script. Tag ini dapat di letakkan di dalam tag head maupun body. Cara ini biasanya digunakan jika code JavaScript berisi beberapa baris tetapi tidak terlalu panjang. Biasanya menggunakan atribut type="text/javacript" untuk membedakan dengan script dari bahasa lain, tetapi tidak wajib.
+
+        <div class="bg-gray-800 p-4 rounded-lg mb-4">
+            <pre class="bg-gray-800 p-4 rounded-lg">
+                <code class="language-html">
+                    &lt;script type="text/javascript">
+                    alert('Halo, saya adalah pesan dari JavaScript!');
+                    &lt;/script>
+                </code>
+            </pre>
+        </div>
+            <p class="font-bold text-sm">3. Menggunakan Tag Script src (External)</p>
+            Caranya yaitu dengan memisahkan code JavaScript dengan code HTML. Code JavaScript di simpan dengan file tersendiri dengan format <span>.js</span>. File tersebut kemudian di panggil melalui atribut src pada tag script. Cara ini biasanya digunakan jika code JavaScript panjang dan kompleks.
+
+        <div class="bg-gray-800 p-4 rounded-lg mb-4">
+            <pre class="bg-gray-800 p-4 rounded-lg">
+                <code class="language-html">
+                    &lt;script src="script.js"&gt;&lt;/script>
+                </code>
+            </pre>
+        </div>
+        </p>
+      </div>
+    </div>
+  </main>
+  <!-- Footer -->
+  <footer id="footer-container" class="bg-gray-00 text-gray-400 flex items-center justify-center"></footer>
+</body>
+</html>

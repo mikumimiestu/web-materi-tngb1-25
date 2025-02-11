@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pemrograman Web</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="../script/sidebar.js"></script>
+  <script src="../script/home/2.syntax-dasar.js"></script>
+  <link rel="stylesheet" href="../styles/footer.css">
+  <script src="../script/footer.js"></script>
+</head>
+<body class="bg-gray-600 text-white flex">
+  <!-- Sidebar akan dimuat melalui JavaScript -->
+  
+  <!-- Main Content -->
+  <main class="flex-1 ml-64 p-8">
+    <div class="container mx-auto">
+      <h1 class="text-3xl font-bold mb-6">Pemrograman Web</h1>
+      <!-- Pendahuluan pengenalan pemrograman web -->
+      <div>
+        <div class="flex items-center mb-4">
+          <h2 class="text-2xl font-bold text-green-400">JavaScript</h2>
+          <div class="flex-1 h-0.5 bg-green-300 ml-4"></div>
+        </div>  
+
+        <h2 class="font-bold text-xl text-blue-200">Variabel</h2>
+        <p class="mb-4">
+            Variabel digunakan untuk menyimpan data berupa teks, angka, dan sebagainya yang nialinya dapat diubah-ubah sehingga memudahkan dalam mengakses data tersebut. Dalam penulisan variabel, ada aturan yang harus dipatuhi agar tidak menghasilkan error pada program. Dalam JavaScript, aturan penulisan variabel sebagai berikut:
+
+            <ol class="list-disc">
+                <li>Jangan menggunakan kata-kata yang menjadi code JavaScript atau dikenal dengan reserved keyword. Contohnya <span class="text-gray-400">break, bolean, else, and, var, true, enum, switch, this. throw, long, new, </span>dan sebagainya
+                </li>
+                <li>
+                    Variabel tidak boleh di awali dengan angka atau simbol. Variabel harus diawali dengan huruf undersore. Contoh: panjang_tinggi, dan sebagainya. Sedangkan yang tidak dibolehkan seperti &tinggi, 4las, @las, dan sebagainya.
+                </li>
+                <li>
+                    Variabel dalam JavaScript bersifat case-sensitive, artinya hurug kecil dan huruf besar dibedakan. Jadi, antara tinggi dan Tinggi adalah dua variabel yang berbeda.
+                </li>
+            </ol>
+            Variabel pada JavaScript dideklarasikan dengan <span class="text-gray-400">var</span>. Contohnya sebagai berikut:
+        
+        <div class="bg-gray-800 p-4 rounded-lg shadow-md">
+            <pre>
+                <code class="language-javascript">
+                    var nama = "Rizky";
+                    var umur = 20;
+                    var tinggi = 170;
+                    var berat = 60;
+                </code>
+            </pre>
+        </div>
+        Selain dengan cara di atas, dapat juga mendeklarasikan beberapa variabel sekaligus dengan satu <span class="text-gray-400">var</span>. Misalnya sebagai berikut:
+        <div class="bg-gray-800 p-4 rounded-lg shadow-md">
+            <pre>
+                <code class="language-javascript">
+                    var panjang, tinggi;
+                </code>
+            </pre>
+        </div>
+        Variabel juga dapat di deklarasikan dengan langsung mendefenisikan nilai awal. Misalnya sebagai berikut:
+        <div class="bg-gray-800 p-4 rounded-lg shadow-md">
+            <pre>
+                <code class="language-javascript">
+                    var panjang = 200;
+                    var tinggi = 150;
+                    var kata = "JavaScript sangat mudah";
+                </code>
+            </pre>
+        </div>
+        Pada JavaScript terdapat batasan dalam mengakses variabel atau yang disebut scope variabel. JavaScript mengenal variabel global dan variabel local. Variabel global merupakan variabel yang dapat dipakai dimana saja, baik di luar function maupun di dalam function. Sedangakn variabel local yaitu variabel yang hanya dapat digunakan di dalam function. Variabel yang dideklarasikan di luar function akan menjadi variabel global dan variabel yang dideklarasikan di dalam function akan menjadi variabel local. Contohnya sebagai berikut:
+        <div class="bg-gray-800 p-4 rounded-lg shadow-md">
+            <pre>
+                <code class="language-javascript">
+                    var a = "Selamat datang";
+                    function selamat() {
+                        var b = "Selamat pagi";
+                        document.write(a)
+                        }
+                        selamat();
+                        document.write(b);
+                </code>
+            </pre>
+        </div>
+
+        Pada code di atas, variabel a berhasil di tampilkan walaupun dideklarasikan di luar function dan digunakan di dalam function. Ini namanya variabel global. Sedangkan variabel b tidak tampil karena dideklarasikan di dalam function dan digunakan di luar function. Ini namanya variabel local. Variabel local hanya dapat digunakan didalam function di mana variabel tersebut dideklarasikan dan tidak dapat digunakan di luar function atau function lain.
+        </p>
+  </main>
+  <!-- Footer -->
+  <footer id="footer-container" class="bg-gray-00 text-gray-400 flex items-center justify-center"></footer>
+</body>
+</html>
