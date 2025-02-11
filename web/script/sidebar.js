@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
           <li><a href="3.pengenalan-js.html" class="text-gray-300 hover:text-white"><p class="text-sm font-bold">Pengenalan JavaScript</p></a></li>
           <li><a href="b.2.konsep-dasar.html" class="text-gray-300 hover:text-white"><p class="text-xs ml-4">| Konsep Dasar</p></a></li>
-          <li><a href="../../../404.html" class="text-gray-300 hover:text-white"><p class="text-xs ml-4">| Tipe Data dan Operator</p></a></li>
+          <li><a href="b.3.tipe-data-operator.html" class="text-gray-300 hover:text-white"><p class="text-xs ml-4">| Tipe Data dan Operator</p></a></li>
 
           <div class="flex-1 h-0.5 bg-gray-300"></div>
 

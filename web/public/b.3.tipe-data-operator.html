@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pemrograman Web</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="../script/sidebar.js"></script>
+  <script src="../script/home/2.syntax-dasar.js"></script>
+  <link rel="stylesheet" href="../styles/footer.css">
+  <script src="../script/footer.js"></script>
+</head>
+<body class="bg-gray-600 text-white flex">
+  <!-- Sidebar akan dimuat melalui JavaScript -->
+  
+  <!-- Main Content -->
+  <main class="flex-1 ml-64 p-8">
+    <div class="container mx-auto">
+      <h1 class="text-3xl font-bold mb-6">Pemrograman Web</h1>
+      <!-- Pendahuluan pengenalan pemrograman web -->
+      <div>
+        <div class="flex items-center mb-4">
+          <h2 class="text-2xl font-bold text-green-400">JavaScript</h2>
+          <div class="flex-1 h-0.5 bg-green-300 ml-4"></div>
+        </div>  
+
+        <h2 class="font-bold text-xl text-blue-200">Tipe Data</h2>
+        <p>
+            Setiap bahasa pemrograman pasti memiliki yang nama tipe data. Tipe data pada JavaScript sedikit berbeda dengan bahasa pemrograman lain. Tipe data pada JavaScript bersifat seolah-olah sebagai objek sehingga setiap variabel pada JavaScript akan langsung memiliki method. JavaScript mengenal 3 tipe data dasar, yaitu sebagai berikut:
+            <ol class="list-disc">
+                <li><span class="font-bold">Numbers</span>: 125, 20.5, dsb</li>
+                <li><span class="font-bold">Strings</span>: "Hello!", "200", dsb</li>
+                <li><span class="font-bold">Booleans</span>: true, false</li>
+            </ol>
+            <br>
+            selain tipe data di atas JavaScript juga mengenal tipe data <span class="font-bold">null</span> dan <span class="font-bold">undefined</span>. Null merupakan nilai dari sebuah variabel yang tidak diberi nilai saat didefenisikan. Sedangkan undefined merupakan hasil yang didapat dari proses berikut:
+            <ol class="list-disc">
+                <li>Nilai dari pemanggilan variabel yang belum dideklarasikan</li>
+                <li>Nilai dari pemanggilan elemn array yang tidak ada</li>
+                <li>Nilai dari pemanggilan property object yang tidak ada</li>
+                <li>Nilai dari pemanggilan function yang tidak mengembalikan nilai</li>
+                <li>Nilai dari parameter function yang tidak memiliki argument</li>
+            </ol>
+        </p>
+
+        <br>
+
+        <h2 class="font-bold text-xl text-blue-200">Operator</h2>
+        <p>
+            Operator merupakan sebuah simbol atau kata yang digunakan untuk melakukan operasi terhadap suatu atau lebih data atau variabel sehingga menghasilkan data baru. Variabel atau data yang dioperasikan disebut dengan <span class="font-bold">operand</span>. JavaScript mengenal beberapa jenis operator, yaitu sebagai berikut:
+        </p>
+        <div class="text-sm">
+            <p class="font-bold text-sm text-gray-400">1. Operator Aritmatika</p>
+            <p>Operator aritmatika merupakan operator yang digunakan untuk melakukan perhitungan data numerik. Daftar operator aritmatika dan cara penggunaannya dilihat pada tabel berikut:</p>
+            <div class="overflow-hidden rounded-lg border border-gray-300 p-4">
+                <table class="table-auto border-collapse w-full">
+                <thead>
+                    <tr>
+                        <th class="text-left">Operator</th>
+                        <th class="text-left">Nama Operator</th>
+                        <th class="text-left">Contoh</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="text-left">+</td>
+                        <td class="text-left">Penjumlahan</td>
+                        <td class="text-left">5 + 3</td>
+                    </tr>
+                    <tr>
+                        <td class="text-left">-</td>
+                        <td class="text-left">Pengurangan</td>
+                        <td class="text-left">5 - 3</td>
+                    </tr>
+                    <tr>
+                        <td class="text-left">*</td>
+                        <td class="text-left">Perkalian</td>
+                        <td class="text-left">5 * 3</td>
+                    </tr>
+                    <tr>
+                        <td class="text-left">/</td>
+                        <td class="text-left">Pembagian</td>
+                        <td class="text-left">Misal A=10 dan B=4, maka A / B = 2.5</td>
+                    </tr>
+                    <tr>
+                        <td class="text-left">%</td>
+                        <td class="text-left">Modulus</td>
+                        <td class="text-left">Misal A=10 dan B=4, maka A % B = 2</td>
+                    </tr>
+                    <tr>
+                        <td class="text-left">**</td>
+                        <td class="text-left">Pangkat</td>
+                        <td class="text-left">Misal A=2 dan B=3, maka A**B = 8</td>
+                    </tr>
+                    <tr>
+                        <td class="text-left">++</td>
+                        <td class="text-left">Pengincrement</td>
+                        <td class="text-left">Misal A=10, maka A++ menghasilkan 11</td>
+                    </tr>
+                    <tr>
+                        <td class="text-left">--</td>
+                        <td class="text-left">Pengdecrement</td>
+                        <td class="text-left">Misal A=10, maka A-- menghasilkan 9</td>
+                    </tr>
+                </tbody>
+            </table>
+            </div>
+        </div>
+
+        <br>
+
+        <div class="text-sm">
+            <p class="font-bold text-sm text-gray-400">2. Operator Perbandingan</p>
+            <p>
+                Operator perbandingan digunakan untuk membandingkan dua variabel atau data. Hasil perbandingan tersebut akan menghasilkan nilai boolean (True atau False). Daftar operator perbandingan dan penjelasannya dapat dilihat pada tabel berikut:
+            </p>
+            <div class="overflow-hidden rounded-lg border border-gray-300 p-4">
+                <table class="table-auto border-collapse w-full">
+                    <thead>
+                        <tr>
+                            <th class="text-left">Operator</th>
+                            <th class="text-left">Penjelasan </th>
+                            <th class="text-left">Contoh</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="text-left">==</td>
+                                <td class="text-left">Sama dengan</td>
+                                <td class="text-left">Misal A=10 dan B=10, maka A==B = True</td>
+                            </tr>
+                            <tr>
+                                <td class="text-left">!=</td>
+                                <td class="text-left">Tidak sama dengan</td>
+                                <td class="text-left">Misal A=10 dan B=4, maka A!=B = True</td>
+                            </tr>
+                            <tr>
+                                <td class="text-left">></td>
+                                <td class="text-left">Lebih besar dari</td>
+                                <td class="text-left">Misal A=10 dan B=4, maka A > B = True</td>
+                            </tr>
+                            <tr>
+                                <td class="text-left"><</td>
+                                <td class="text-left">Kurang dari</td>
+                                <td class="text-left">Misal A=4 dan B=10, maka A < B = True</td>
+                            </tr>
+                            <tr>
+                                <td class="text-left">>=</td>
+                                <td class="text-left">Lebih besar atau sama dengan</td>
+                                <td class="text-left">Misal A=10 dan B=10, maka A >= B = True</td>
+                            </tr>
+                            <tr>
+                                <td class="text-left"><=</td>
+                                <td class="text-left">Kurang dari atau sama dengan</td>
+                                <td class="text-left">Misal A=4 dan B=10, maka A <= B = True</td>
+                            </tr>
+                        </tbody>
+                    </thead>
+                </table>
+            </div>
+        </div>
+  </main>
+  <!-- Footer -->
+  <footer id="footer-container" class="bg-gray-00 text-gray-400 flex items-center justify-center"></footer>
+</body>
+</html>
