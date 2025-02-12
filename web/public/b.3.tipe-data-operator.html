@@ -159,6 +159,61 @@
                 </table>
             </div>
         </div>
+        <div class="text-sm">
+            <p class="font-bold text-sm text-gray-400">3. Operator Logika</p>
+            <p>
+                Operator logika digunakan untuk megoperasikan data boolean. Hasil perbandingan tersebut akan menghasilkan nilai true atau false. Daftar operator logika dan penjelasannya dapat di lihat pada tabel berikut:
+            </p>
+            <div class="overflow-hidden rounded-lg border border-gray-300 p-4">
+                <table class="table-auto border-collapse w-full">
+                    <thead>
+                        <tr>
+                            <th class="text-left">Operator</th>
+                            <th class="text-left">Penjelasan</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="text-left">&&</td> 
+                            <td class="text-left">Menghasilkan nailai true jika kedua operand bernilai true (logika And). Misal A = true dan B = false, maka (A && B) menghasilkan false.</td>
+                        </tr>
+                        <tr>
+                            <td class="text-left">||</td>
+                            <td class="text-left">Menghasilkan nilai true jika salah satu atau kedua operand bernilai true (logika OR). Misal A = true dan B = false, maka (A || B) menghasilkan true.</td>
+                        </tr>
+                        <tr>
+                            <td class="text-left">!</td>
+                            <td class="text-left">Membalikkan nilai sebuah variabel (logika NOT). Misal A = true, maka (!A) menghasilkan false.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <p>Dan masih ada operator Bitwise, Assignment, dan Kondisi, tetapi ini akan di pelajari kedepannya.</p>
+
+        <br>
+
+        <p>Berikut contoh beberapa penggunaan operator di dalam HTMl:</p>
+        <div class="bg-gray-800 p-4 rounded-lg shadow-md">
+            <pre>
+                <code class="language-javascript">
+                    var A = 10, B = 4;
+                    var C = A % B;
+                    document.write("10 % 4 = " + C);
+                    <br>
+                    A++;
+                    document.write("Nilai A sekarang: " + A);
+                    <br>
+                    var D = A > B;
+                    document.write("10 > 4 hasilnya: " + D);
+                    <br>
+                    var E = false, F = true;
+                    var G = E && F;
+                    document.write("false && true hasilnya: " + G);
+                </code>
+            </pre>
+        </div>
+        
   </main>
   <!-- Footer -->
   <footer id="footer-container" class="bg-gray-00 text-gray-400 flex items-center justify-center"></footer>

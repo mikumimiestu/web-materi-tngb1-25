@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pemrograman Web</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="../script/sidebar.js"></script>
+  <script src="../script/home/2.syntax-dasar.js"></script>
+  <link rel="stylesheet" href="../styles/footer.css">
+  <script src="../script/footer.js"></script>
+</head>
+<body class="bg-gray-600 text-white flex">
+  <!-- Sidebar akan dimuat melalui JavaScript -->
+  
+  <!-- Main Content -->
+  <main class="flex-1 ml-64 p-8">
+    <div class="container mx-auto">
+      <h1 class="text-3xl font-bold mb-6">Pemrograman Web</h1>
+      <!-- Pendahuluan pengenalan pemrograman web -->
+      <div>
+        <div class="flex items-center mb-4">
+          <h2 class="text-2xl font-bold text-green-400">JavaScript</h2>
+          <div class="flex-1 h-0.5 bg-green-300 ml-4"></div>
+        </div>  
+
+        <h2 class="font-bold text-xl text-blue-200">Statement Control</h2>
+        <p>
+            Statement control pada bahasa pemrograman digunakan untuk menjalankan suatu program sesuai dengan kondisi tertentu. Ada berbagai jenis statement control pada JAvaScript yang dapat digunakan sesuai kebutuhan.
+        </p>
+        <div class="text-sm mt-4">
+            <h1 class="font-bold text-gray-200">1. Percabangan dengan if</h1>
+            <p>
+                Percabangan ini digunakan untuk menjalankan suatu program jika kondisi terpenuhi (true) dan jika kondisi tidak terpenuhi tidak ada alternatif lain untuk dijalankan. Penggunaan if dapat di tulis dengan format sebagai berikut:
+            </p>
+            <div class="bg-gray-800 p-4 rounded-lg shadow-md">
+                <pre>
+                    <code class="language-javascript">
+                        if (kondisi) pernyataan;
+                    </code>
+                </pre>
+            </div>
+            <p>
+                Jika pernyataan lebih dari satu baris, cara di atas tidak dapat digunakan, tetapi harus menggunakan format berikut:
+            </p>
+            <div class="bg-gray-800 p-4 rounded-lg shadow-md">
+                <pre>
+                    <code class="language-javascript">
+                        if (kondisi) {
+                            pernyataan baris pertama;
+                            pernyataan baris kedua;
+                        }
+                    </code>
+                </pre>
+            </div>
+            <p>
+                Berikut ini contoh percabangan menggunakan if pada JavaScript:
+            </p>
+            <div class="bg-gray-800 p-4 rounded-lg shadow-md">
+                <pre>
+                    <code class="language-javascript">
+                        var umur = 20;
+                        var dewasa;
+
+                        if(umur > 17) dewasa = true;
+                        if(umur > 20) document.write("Anda sudah boleh menikah");
+
+                        if(dewasa) {
+                            document.write("Anda sudah bisa buat KTP");
+                            document.write("Anda sudah bisa buat SIM");
+                        }
+                    </code>
+                </pre>
+            </div>
+        </div>
+        <div class="text-sm mt-4">
+            <h1 class="font-bold text-gray-200">2. Percabangan dengan if ...else...</h1>
+            <p>
+                Percabangan ini digunakan untuk menjalankan program jika kondisi terpenuhi. Jika kondisi tidak terpenuhi, ada alternatif lain untuk dijalankan. Penggunaan if...else dapat di tulis dengan format sebagai berikut:
+            </p>
+            <div class="bg-gray-800 p-4 rounded-lg shadow-md">
+                <pre>
+                    <code class="language-javascript">
+                        if (kondisi) pernyataan jika terpenuhi;
+                        else pernyataan jika tidak terpenuhi;
+                    </code>
+                </pre>
+            </div>
+            <p>
+                Jika pernyataan lebih dari satu baris:
+            </p>
+            <div class="bg-gray-800 p-4 rounded-lg shadow-md">
+                <pre>
+                    <code class="language-javascript">
+                        if (kondisi) {
+                            pernyataan jika terpenuhi;
+                        }else {
+                            pernyataan jika tidak terpenuhi;
+                        }
+                    </code>
+                </pre>
+            </div>
+            <p>
+                Berikut contoh penggunaannya:
+            </p>
+            <div class="bg-gray-800 p-4 rounded-lg shadow-md">
+                <pre>
+                    <code class="language-javascript">
+                        var angka = 20;
+                        if(angka % 2 == 0) document.write("Bilangan genap");
+
+                        else document.write("Bilangan ganjil");
+                    </code>
+                </pre>
+            </div>
+        </div>
+        
+  </main>
+  <!-- Footer -->
+  <footer id="footer-container" class="bg-gray-00 text-gray-400 flex items-center justify-center"></footer>
+</body>
+</html>
+
+<script>
+    // Latihan
+    // 1. Apa operator jika nama operatornya : Modulus, tidak sama dengan, dan pangkat
+    // 2. Buatlah sebuah program JavaScript percabangan if yang meminta pengguna memasukkan umur melalui prompt. Jika jam menunjukkan pukul 5 sore, tampilkan pesan "Anda sudah boleh pulang".  (tampil pada terminal)
+    // 3. Buatlah sebuah program JavaScript Jika angka tersebut habis dibagi 2, tampilkan "Bilangan genap", jika tidak, tampilkan "Bilangan ganjil". (tampil pada terminal)
+    // 4. Buatkan program JavaScript jika umur 12 tahun maka anak-anak, dan jika 17 tahun maka remaja.
+</script>

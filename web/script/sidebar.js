@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
     const sidebar = `
-      <aside class="w-64 bg-gray-800 h-screen p-4 fixed top-0 left-0">
+      <aside class="w-64 bg-gray-800 h-screen p-4 fixed top-0 left-0 overflow-y-auto">
         <h2 class="text-xl font-bold mb-4">Pemrograman Web</h2>
         <ul class="space-y-2">
           <li><a href="1.pendahuluan.html" class="text-gray-300 hover:text-white"><p class="text-sm font-bold">Pendahuluan</p></a></li>
@@ -15,6 +15,9 @@ document.addEventListener('DOMContentLoaded', () => {
           <li><a href="3.pengenalan-js.html" class="text-gray-300 hover:text-white"><p class="text-sm font-bold">Pengenalan JavaScript</p></a></li>
           <li><a href="b.2.konsep-dasar.html" class="text-gray-300 hover:text-white"><p class="text-xs ml-4">| Konsep Dasar</p></a></li>
           <li><a href="b.3.tipe-data-operator.html" class="text-gray-300 hover:text-white"><p class="text-xs ml-4">| Tipe Data dan Operator</p></a></li>
+          <li><a href="b.4.statement-control.html" class="text-gray-300 hover:text-white"><p class="text-xs ml-4">| Statement Control</p></a></li>
+          <li><a href="../../../404.html" class="text-gray-300 hover:text-white"><p class="text-xs ml-4">| Function</p></a></li>
+          <li><a href="../../../404.html" class="text-gray-300 hover:text-white"><p class="text-xs ml-4">| Event</p></a></li>
 
           <div class="flex-1 h-0.5 bg-gray-300"></div>
 
